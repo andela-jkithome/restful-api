@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var router = require('./routes/api');
 
-mongoose.connect('mongodb://node:node@novus.modulusmongo.net:27017/Iganiq8o');
+mongoose.connect('mongodb://jerry:jerrydata@ds051853.mongolab.com:51853/comic-characters');
 
 var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
