@@ -7,6 +7,10 @@ router.use(function(req, res, next) {
   next();
 });
 
+router.get('/', function(req, res) {
+    res.json('Welcome to our api!');   
+});
+
 router.post('/characters', function(req, res) {
   var character = new Character();
     character.universe = req.body.universe;
