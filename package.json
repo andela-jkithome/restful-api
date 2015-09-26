@@ -1,0 +1,30 @@
+{
+  "name": "comic_characters",
+  "version": "1.0.0",
+  "description": "list of comic book characters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-jkithome/restful-api.git"
+  },
+  "keywords": [
+    "superhero",
+    "villain",
+    "marvel",
+    "DC"
+  ],
+  "author": "Jeremy Kithome",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andela-jkithome/restful-api/issues"
+  },
+  "homepage": "https://github.com/andela-jkithome/restful-api#readme",
+  "dependencies": {
+    "body-parser": "^1.14.0",
+    "express": "^4.13.3",
+    "mongoose": "^4.1.8"
+  }
+}
