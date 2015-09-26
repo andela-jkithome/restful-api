@@ -2,7 +2,7 @@
   "name": "comic_characters",
   "version": "1.0.0",
   "description": "list of comic book characters",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
