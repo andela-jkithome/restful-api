@@ -11,6 +11,14 @@ router.get('/', function(req, res) {
     res.json('Welcome to our api!');   
 });
 
+router.get('/characters', function(req, res) {
+  Character.find(function(err, characters) {
+    if (err)
+      res.send(err);
+    res.json(characters);
+  });
+});
+
 router.post('/characters', function(req, res) {
   var character = new Character();
     character.universe = req.body.universe;
@@ -26,14 +34,6 @@ router.post('/characters', function(req, res) {
         res.send(err);
       res.send('Character created!')
     });
-});
-
-router.get('/characters', function(req, res) {
-  Character.find(function(err, characters) {
-    if (err)
-      res.send(err);
-    res.json(characters);
-  });
 });
 
 router.get('/characters/:character_id', function(req, res) {
